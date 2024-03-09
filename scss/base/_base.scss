@@ -3,10 +3,6 @@
 ::after {
     box-sizing: border-box;
 }
-:root {
-    --text-color: brightness(0) saturate(100%) invert(7%) sepia(17%)
-        saturate(4708%) hue-rotate(225deg) brightness(88%) contrast(93%);
-}
 html {
     font-size: 62.5%;
 }
