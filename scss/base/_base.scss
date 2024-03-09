@@ -3,11 +3,34 @@
 ::after {
     box-sizing: border-box;
 }
-
+:root {
+    --text-color: brightness(0) saturate(100%) invert(7%) sepia(17%)
+        saturate(4708%) hue-rotate(225deg) brightness(88%) contrast(93%);
+}
 html {
     font-size: 62.5%;
 }
 body {
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a,
+input,
+button,
+textarea,
+select {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    background: transparent;
+}
+.icon {
+    filter: var(--icon-color);
 }
