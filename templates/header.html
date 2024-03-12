@@ -1,6 +1,6 @@
 <div class="container">
     <div class="top-bar">
-        <button class="top-bar__more">
+        <button class="top-bar__more js-toggle" toggle-target="#box">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
         <a href="#!" class="logo">
@@ -9,8 +9,11 @@
         </a>
 
         <!-- Navigation -->
-        <nav class="navbar">
-            <ul class="navbar__list js-dropdown-list">
+        <nav id="box" class="navbar hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#box">
+                <img src="./assets/icons/arrow-left.svg" alt="" />
+            </button>
+            <ul class="navbar__list js-dropdown-list" toggle-target="#box">
                 <li class="navbar__item">
                     <a href="#!" class="navbar__link"
                         >Departments
@@ -8322,7 +8325,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="navbar__overlay"></div>
+        <div class="navbar__overlay js-toggle" toggle-target="#box"></div>
         <!-- Actions -->
         <div class="top-act">
             <div class="top-act__group top-act__group--single">

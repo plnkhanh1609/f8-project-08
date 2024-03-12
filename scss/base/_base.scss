@@ -27,6 +27,7 @@ select {
     outline: none;
     color: inherit;
     background: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 .icon {
     filter: var(--icon-color);
