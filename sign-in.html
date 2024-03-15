@@ -1,32 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon/favicon-32x32.png"
-        />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png"
-        />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-        <link
-            rel="mask-icon"
-            href="./assets/favicon/safari-pinned-tab.svg"
-            color="#5bbad5"
-        />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
@@ -41,12 +23,30 @@
             load("#header", "./templates/header.html");
         </script>
         <!-- Main -->
-        <h1>Sign-In</h1>
+        <h2 id="elem2">Hello from the script!</h2>
+        <h1 id="elem">Hello from the script!</h1>
 
+        <div class="test">
+            adsd
+            <h1 class="abc">hi</h1>
+        </div>
         <!-- Footer -->
         <footer id="footer"></footer>
         <script>
             load("#footer", "./templates/footer.html");
         </script>
     </body>
+    <script>
+        const a = document.querySelector(".test");
+        console.dir(a.innerHTML);
+        // catch on document...
+        // document.addEventListener("hello", function (event) {
+        //     // (1)
+        //     alert("Hello from " + event.target.tagName); // Hello from H1
+        // });
+
+        // // ...dispatch on elem!
+        // let event = new Event("hello", { bubbles: true }); // (2)
+        // elem.dispatchEvent(event);
+    </script>
 </html>

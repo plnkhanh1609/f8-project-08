@@ -103,7 +103,6 @@ function handleActiveMenu() {
     const dropdowns = $$(".js-dropdown");
     const menus = $$(".js-menu-list");
     const activeClass = "menu-column__item--active";
-
     const removeActive = (menu) => {
         menu.querySelector(`.${activeClass}`)?.classList.remove(activeClass);
     };
@@ -113,13 +112,19 @@ function handleActiveMenu() {
             const items = menu.children;
             if (!items.length) return;
             removeActive(menu);
-            items[0].classList.add(activeClass);
+            if (window.innerWidth > 991) items[0].classList.add(activeClass);
 
             Array.from(items).forEach((item) => {
                 item.onmouseenter = () => {
                     if (window.innerWidth <= 991) return;
                     removeActive(menu);
                     item.classList.add(activeClass);
+                };
+                item.onclick = () => {
+                    if (window.innerWidth > 991) return;
+                    removeActive(menu);
+                    item.classList.add(activeClass);
+                    item.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
                 };
             });
         });
@@ -157,6 +162,20 @@ function initJsToggle() {
                 $(target).classList.toggle("hide", !isHidden);
                 $(target).classList.toggle("show", isHidden);
             });
+        };
+    });
+    $$(".navbar__link").forEach((item) => {
+        const activeClass = "navbar__link--active";
+        item.onclick = () => {
+            if (window.innerWidth >= 991) return;
+            const isHidden = item.classList.contains("navbar__link--active");
+
+            $$(".navbar__link").forEach((item2) => {
+                item2.classList.contains("navbar__link--active") ? item2.classList.remove(activeClass) : undefined;
+                item2.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            });
+            item.classList.toggle(activeClass, !isHidden);
+            item.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         };
     });
 }

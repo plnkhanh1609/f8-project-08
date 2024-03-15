@@ -1,6 +1,6 @@
 <div class="container">
     <div class="top-bar">
-        <button class="top-bar__more js-toggle" toggle-target="#box">
+        <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#box">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
         <a href="#!" class="logo">
@@ -10,21 +10,38 @@
 
         <!-- Navigation -->
         <nav id="box" class="navbar hide">
-            <button class="navbar__close-btn js-toggle" toggle-target="#box">
-                <img src="./assets/icons/arrow-left.svg" alt="" />
+            <button class="navbar__close-btn d-none d-lg-block js-toggle" toggle-target="#box">
+                <img class="icon" src="./assets/icons/arrow-left.svg" alt="" />
             </button>
+            <div class="top-act__group d-none d-md-flex">
+                <button class="top-act__btn">
+                    <div class="top-act__wrap">
+                        <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
+                        <span class="top-act__title">Card</span>
+                    </div>
+                    <span class="top-act__qty">03</span>
+                </button>
+                <span class="top-act__separate"></span>
+                <button class="top-act__btn">
+                    <div class="top-act__wrap">
+                        <img src="./assets/icons/cart.svg" alt="" class="icon top-act__icon" />
+                        <span class="top-act__title">Favorite</span>
+                    </div>
+                    <span class="top-act__qty">03</span>
+                </button>
+            </div>
             <ul class="navbar__list js-dropdown-list" toggle-target="#box">
                 <li class="navbar__item">
                     <a href="#!" class="navbar__link"
                         >Departments
                         <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
                     </a>
-                    <div class="dropdown">
+                    <div class="dropdown js-dropdown">
                         <div class="dropdown__inner">
                             <div class="top-menu">
                                 <div class="top-menu__main">
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-lg-none">
                                             <img
                                                 src="./assets/imgs/category/cate-1.1.svg"
                                                 alt=""
@@ -37,7 +54,7 @@
                                             />
                                         </div>
                                         <div class="menu-column__content">
-                                            <h2 class="menu-column__heading">All Departments</h2>
+                                            <h2 class="menu-column__heading d-lg-none">All Departments</h2>
                                             <ul class="menu-column__list js-menu-list">
                                                 <li class="menu-column__item">
                                                     <a href="#!" class="menu-column__link">Savings & Featured Shops</a>
@@ -8328,20 +8345,20 @@
         <div class="navbar__overlay js-toggle" toggle-target="#box"></div>
         <!-- Actions -->
         <div class="top-act">
-            <div class="top-act__group top-act__group--single">
+            <div class="top-act__group d-lg-none top-act__group--single">
                 <button class="top-act__btn">
                     <img src="./assets/icons/search.svg" alt="" class="icon top-act__icon" />
                 </button>
             </div>
-            <div class="top-act__group">
+            <div class="top-act__group d-md-none">
                 <button class="top-act__btn">
                     <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
-                    <span class="top-act__title">03</span>
+                    <span class="top-act__qty">03</span>
                 </button>
                 <span class="top-act__separate"></span>
                 <button class="top-act__btn">
                     <img src="./assets/icons/cart.svg" alt="" class="icon top-act__icon" />
-                    <span class="top-act__title">$65.42</span>
+                    <span class="top-act__qty">$65.42</span>
                 </button>
             </div>
 
