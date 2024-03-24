@@ -23,6 +23,11 @@ html {
     // sidebar
     --sidebar-box-shadow: rgba(200, 200, 200, 0.4);
 
-    // Slideshow
-    --slideshow-numb-color: #fff;
+    // Category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #000;
+    @include abstracts.screen(lg) {
+        --cate-item-bg: #fff;
+    }
 }
