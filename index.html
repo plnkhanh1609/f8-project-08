@@ -22,14 +22,35 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
+        <!-- Main -->
         <div class="container">
-            <!-- Main -->
-            <h1>Main</h1>
-            <!-- Footer -->
-            <footer id="footer"></footer>
-            <script>
-                load("#footer", "./templates/footer.html");
-            </script>
+            <!-- SlideShow -->
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <picture>
+                            <source media="(max-width: 767.98px)" srcset="./assets/imgs/slideshow/slide-1-md.png" />
+                            <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img"
+                        /></picture>
+                    </div>
+                    <div class="slideshow__item">
+                        <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img" />
+                    </div>
+                    <div class="slideshow__item">
+                        <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img" />
+                    </div>
+                </div>
+                <div class="slideshow__page">
+                    <span class="slideshow__numb">1</span>
+                    <span class="slideshow__slider"></span>
+                    <span class="slideshow__numb">5</span>
+                </div>
+            </div>
         </div>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
     </body>
 </html>

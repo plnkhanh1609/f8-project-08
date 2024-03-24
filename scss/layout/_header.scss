@@ -17,6 +17,7 @@
 }
 .top-bar {
     position: relative;
+    z-index: 1;
     @extend %flexItemCenter;
     @include abstracts.breakpoint(md) {
         justify-content: space-between;
