@@ -22,7 +22,7 @@
             translate: -50% 0;
             filter: var(--dropdown-arrow-color);
         }
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             padding: 0 40px;
             border-radius: none;
             background: none;
@@ -31,11 +31,11 @@
                 content: none;
             }
         }
-        @include abstracts.breakpoint(sm) {
+        @include abstracts.screen(sm) {
             padding: 0 20px;
         }
     }
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding-top: 0;
     }
@@ -48,7 +48,7 @@
         overflow-y: auto;
         width: 292px;
         border-right: 1px solid var(--top-menu-border-color);
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             height: auto;
             width: 100%;
             border-right: none;
@@ -68,10 +68,10 @@
         flex-shrink: 0;
         width: 36px;
         height: 36px;
-        @include abstracts.breakpoint(xl) {
+        @include abstracts.screen(xl) {
             display: none;
         }
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             display: block;
         }
     }
@@ -99,7 +99,7 @@
     }
     &__list {
         margin-top: 19px;
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             margin-top: 0;
         }
     }
@@ -138,7 +138,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         height: auto;
         position: initial;
         grid-template-columns: repeat(1, 1fr);
