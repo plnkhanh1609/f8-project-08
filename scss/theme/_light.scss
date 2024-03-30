@@ -2,9 +2,8 @@
 
 html {
     --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(17%) saturate(4708%) hue-rotate(225deg) brightness(88%)
-        contrast(93%);
-
+    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(17%) saturate(4708%)
+        hue-rotate(225deg) brightness(88%) contrast(93%);
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
     --top-act-group-bg-color: #fff;
@@ -30,4 +29,13 @@ html {
     @include abstracts.screen(lg) {
         --cate-item-bg: #fff;
     }
+
+    // Product
+    --product-bg-color: #fff;
+    --product-shadow-color: rgba(237, 237, 246, 0.2);
+
+    // Buttons
+    --btn-like-color: #ffffff;
+    --filter-btn-bg: #fff;
+    --filter-btn-color: #6c6c72;
 }

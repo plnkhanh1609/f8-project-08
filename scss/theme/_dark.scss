@@ -2,8 +2,8 @@
 
 html.dark {
     --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%) hue-rotate(173deg) brightness(106%)
-        contrast(101%);
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%)
+        hue-rotate(173deg) brightness(106%) contrast(101%);
 
     --body-bg: #292e39;
     --header-bg-color: #171c28;
@@ -16,11 +16,11 @@ html.dark {
 
     // Dropdown
     --dropdown-bg: #2f3441;
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(10%) saturate(1155%) hue-rotate(185deg)
-        brightness(96%) contrast(91%);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(10%) saturate(1155%)
+        hue-rotate(185deg) brightness(96%) contrast(91%);
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(24%) saturate(678%) hue-rotate(271deg)
-        brightness(102%) contrast(97%);
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(24%) saturate(678%)
+        hue-rotate(271deg) brightness(102%) contrast(97%);
 
     // sidebar
     --sidebar-box-shadow: rgba(23, 28, 40, 0.4);
@@ -32,4 +32,14 @@ html.dark {
     --cate-item-bg: #171c28;
     --cate-item-thumb-bg: #292e39;
     --cate-item-title-color: #ffffff;
+
+    // Product
+    --product-bg-color: #171c28;
+    --product-shadow-color: rgba(0, 0, 0, 0.2);
+    --product-title-color: #fff;
+
+    // Buttons
+    --btn-like-color: #292e39;
+    --filter-btn-bg: #171c28;
+    --filter-btn-color: #fff;
 }

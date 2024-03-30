@@ -29,15 +29,28 @@
                 <div class="slideshow__inner">
                     <div class="slideshow__item">
                         <picture>
-                            <source media="(max-width: 767.98px)" srcset="./assets/imgs/slideshow/slide-1-md.png" />
-                            <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img"
+                            <source
+                                media="(max-width: 767.98px)"
+                                srcset="./assets/imgs/slideshow/slide-1-md.png" />
+                            <img
+                                src="./assets/imgs/slideshow/slide-1.png"
+                                alt=""
+                                class="slideshow__img"
                         /></picture>
                     </div>
                     <div class="slideshow__item">
-                        <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img" />
+                        <img
+                            src="./assets/imgs/slideshow/slide-1.png"
+                            alt=""
+                            class="slideshow__img"
+                        />
                     </div>
                     <div class="slideshow__item">
-                        <img src="./assets/imgs/slideshow/slide-1.png" alt="" class="slideshow__img" />
+                        <img
+                            src="./assets/imgs/slideshow/slide-1.png"
+                            alt=""
+                            class="slideshow__img"
+                        />
                     </div>
                 </div>
                 <div class="slideshow__page">
@@ -47,13 +60,17 @@
                 </div>
             </section>
             <!-- Browse Categories -->
-            <section class="home__container categories">
-                <h2 class="home__heading">Browse Categories</h2>
+            <section class="home__container">
+                <div class="home__row"><h2 class="home__heading">Browse Categories</h2></div>
                 <div class="home__cate row row-cols-3 row-cols-md-1">
                     <!-- Category item 1 -->
                     <div class="col">
                         <article class="cate-item">
-                            <img src="./assets/imgs/categories item/item-1.png" alt="" class="cate-item__thumb" />
+                            <img
+                                src="./assets/imgs/categories-item/item-1.png"
+                                alt=""
+                                class="cate-item__thumb"
+                            />
                             <section class="cate-item__info">
                                 <h3 class="cate-item__title">$24 - $150</h3>
                                 <p class="cate-item__des">New sumatra mandeling coffe blend</p>
@@ -63,7 +80,11 @@
                     <!-- Category item 2 -->
                     <div class="col">
                         <article class="cate-item">
-                            <img src="./assets/imgs/categories item/item-2.png" alt="" class="cate-item__thumb" />
+                            <img
+                                src="./assets/imgs/categories-item/item-2.png"
+                                alt=""
+                                class="cate-item__thumb"
+                            />
                             <section class="cate-item__info">
                                 <h3 class="cate-item__title">$37 - $160</h3>
                                 <p class="cate-item__des">Espresso arabica and robusta beans</p>
@@ -73,10 +94,192 @@
                     <!-- Category item 3 -->
                     <div class="col">
                         <article class="cate-item">
-                            <img src="./assets/imgs/categories item/item-3.png" alt="" class="cate-item__thumb" />
+                            <img
+                                src="./assets/imgs/categories-item/item-3.png"
+                                alt=""
+                                class="cate-item__thumb"
+                            />
                             <section class="cate-item__info">
                                 <h3 class="cate-item__title">$32 - $160</h3>
-                                <p class="cate-item__des">Lavazza top class whole bean coffee blend</p>
+                                <p class="cate-item__des">
+                                    Lavazza top class whole bean coffee blend
+                                </p>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Product -->
+            <section class="home__container home__product">
+                <div class="home__row">
+                    <h2 class="home__heading">Total LavAzza 1320</h2>
+                    <button class="filter-btn" type="button">
+                        <span class="filter-btn__title">Filter</span>
+                        <img src="./assets/icons/filter.svg" alt="" class="icon filter-btn__icon" />
+                    </button>
+                </div>
+                <div class="row row-cols-4 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
+                    <!-- Product item 1 -->
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/imgs/products-item/item-1.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn like-btn--liked product-item__like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        class="like-btn__img"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-active.svg"
+                                        class="like-btn__img--active"
+                                        alt=""
+                                    />
+                                </button>
+                            </div>
+                            <section class="product-item__info">
+                                <h4 class="product-item__title">
+                                    <a href="#!"
+                                        >Coffee Beans - Espresso Arabica and Robusta Beans</a
+                                    >
+                                </h4>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price">$47.00</span>
+                                    <div class="product-item__rate">
+                                        <img src="./assets/icons/star.svg" alt="" />
+                                        <span class="product-item__score">4.3</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                    <!-- Product item 2 -->
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/imgs/products-item/item-2.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <div class="like-btn product-item__like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        class="icon like-btn__img"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-active.svg"
+                                        class="like-btn__img--active"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <section class="product-item__info">
+                                <h4 class="product-item__title">
+                                    <a href="#!"
+                                        >Coffee Beans - Espresso Arabica and Robusta Beans</a
+                                    >
+                                </h4>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price">$47.00</span>
+                                    <div class="product-item__rate">
+                                        <img src="./assets/icons/star.svg" alt="" />
+                                        <span class="product-item__score">4.3</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                    <!-- Product item 3 -->
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/imgs/products-item/item-3.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <div class="like-btn product-item__like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        class="icon like-btn__img"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-active.svg"
+                                        class="like-btn__img--active"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <section class="product-item__info">
+                                <h4 class="product-item__title">
+                                    <a href="#!"
+                                        >Coffee Beans - Espresso Arabica and Robusta Beans</a
+                                    >
+                                </h4>
+                                <p class="product-item__brand">welikecoffee</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price">$47.00</span>
+                                    <div class="product-item__rate">
+                                        <img src="./assets/icons/star.svg" alt="" />
+                                        <span class="product-item__score">4.3</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                    <!-- Product item 4 -->
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/imgs/products-item/item-4.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <div class="like-btn product-item__like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        class="icon like-btn__img"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-active.svg"
+                                        class="like-btn__img--active"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <section class="product-item__info">
+                                <h4 class="product-item__title">
+                                    <a href="#!"
+                                        >Coffee Beans - Espresso Arabica and Robusta Beans</a
+                                    >
+                                </h4>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price">$47.00</span>
+                                    <div class="product-item__rate">
+                                        <img src="./assets/icons/star.svg" alt="" />
+                                        <span class="product-item__score">4.3</span>
+                                    </div>
+                                </div>
                             </section>
                         </article>
                     </div>
